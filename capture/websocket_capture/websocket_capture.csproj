@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\root\.nuget\packages\nlog.config\4.7.8\contentFiles\any\any\NLog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog.Config" Version="4.7.8" />
+    <PackageReference Include="SharpPcap" Version="5.4.0" />
+  </ItemGroup>
+
+</Project>

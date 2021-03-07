@@ -1,0 +1,116 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "websocket_capture/1.0.0": {
+        "dependencies": {
+          "NLog.Config": "4.7.8",
+          "SharpPcap": "5.4.0"
+        },
+        "runtime": {
+          "websocket_capture.dll": {}
+        }
+      },
+      "NLog/4.7.8": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.8.12686"
+          }
+        }
+      },
+      "NLog.Config/4.7.8": {
+        "dependencies": {
+          "NLog": "4.7.8",
+          "NLog.Schema": "4.7.8"
+        }
+      },
+      "NLog.Schema/4.7.8": {},
+      "PacketDotNet/1.1.2": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/PacketDotNet.dll": {
+            "assemblyVersion": "1.1.2.0",
+            "fileVersion": "1.1.2.0"
+          }
+        }
+      },
+      "SharpPcap/5.4.0": {
+        "dependencies": {
+          "PacketDotNet": "1.1.2",
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SharpPcap.dll": {
+            "assemblyVersion": "5.4.0.0",
+            "fileVersion": "5.4.0.0"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {},
+      "System.Runtime.CompilerServices.Unsafe/4.7.0": {}
+    }
+  },
+  "libraries": {
+    "websocket_capture/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NLog/4.7.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G/TQI32O1tf0USZwsz8/uxPSR/hgbesuB7A5PHU/yWkhWQNVr4OriNWO/ImE3NiSzAPCt1UaUFE51+eHQmZPQg==",
+      "path": "nlog/4.7.8",
+      "hashPath": "nlog.4.7.8.nupkg.sha512"
+    },
+    "NLog.Config/4.7.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-87JTvjvxcRKtC/WR29o3WNU9F+B4OFuc+KwyhmI6GffKxF258UBECjTJnrT9isWIgHFSl/d0VNIwYLshi96Dww==",
+      "path": "nlog.config/4.7.8",
+      "hashPath": "nlog.config.4.7.8.nupkg.sha512"
+    },
+    "NLog.Schema/4.7.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/rTsZLwJQxVt5v1tS6suhn4EhYGobTILEv26yx+VXJYoyEDSduGznaJqYpwPw06Jg1chkdyx6qM+CLg0t4J/Kw==",
+      "path": "nlog.schema/4.7.8",
+      "hashPath": "nlog.schema.4.7.8.nupkg.sha512"
+    },
+    "PacketDotNet/1.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UNyq8BHUZA17++FAfPswZqV5y55hW6wWThuR9JRkz6swRAbCLltaHoH0nmBG51qoQzbAcDc92cafLJMGkt5dFg==",
+      "path": "packetdotnet/1.1.2",
+      "hashPath": "packetdotnet.1.1.2.nupkg.sha512"
+    },
+    "SharpPcap/5.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ND3G6Q+WW3nZ0kfE5U8Tsy1TY2ybn5oQCvPBp5Pd9bycdHt1SrAVzpmga6J1qO0Fm58XhYrSMIfKcclWqo5Meg==",
+      "path": "sharppcap/5.4.0",
+      "hashPath": "sharppcap.5.4.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
+    }
+  }
+}
