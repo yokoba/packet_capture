@@ -10,7 +10,8 @@ namespace PacketCapture
 {
     class Program
     {
-        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        private static NLog.Logger file_logger = NLog.LogManager.GetLogger("LOGFILE");
+        private static NLog.Logger sniffer_logger = NLog.LogManager.GetLogger("SNIFFER");
 
 
         /// <summary>
@@ -412,7 +413,13 @@ namespace PacketCapture
 
                 string p = $"{time.Hour:D2}:{time.Minute:D2}:{time.Second:D2},{time.Millisecond:D3} Len={len,4} {srcIp,13}:{srcPort,-5} -> {dstIp,13}:{dstPort,-5}";
 
-                logger.Info(p);
+                file_logger.Info(p);
+
+
+                string payload = BitConverter.ToString(tcpPacket.Bytes).Replace("-", "");
+                string pp = $"{time.Hour:D2}:{time.Minute:D2}:{time.Second:D2},{time.Millisecond:D3} Seq={tcpPacket.SequenceNumber,10} Len={len,4} {payload}";
+
+                sniffer_logger.Info(pp);
 
                 //Console.WriteLine(p);
             }
